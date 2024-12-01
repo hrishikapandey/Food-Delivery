@@ -1,0 +1,105 @@
+/* Container for both sections */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+  }
+  
+  /* Form Section (50% width) */
+  .formContainer {
+    flex: 1; /* Takes 50% of the screen */
+    padding: 2rem;
+    display: flex;
+    max-width: 700px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  
+  .welcome {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 3rem;
+    
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 10rem;
+  }
+  
+  .label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+  
+  .button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .signin {
+    margin-top: 1rem;
+  }
+  
+  .signinLink {
+    color: orange;
+    text-decoration: none;
+  }
+  
+  /* Hero Image Section (50% width) */
+  .heroContainer {
+    flex: 1; /* Takes 50% of the screen */
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Optional background */
+  
+  }
+  
+  .heroImage {
+    max-width: 95%;
+    max-height: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-left: 20rem;
+  }
+  /* Add smooth transition */
+.formContainer {
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.heroContainer {
+  transition: opacity 0.3s ease-in-out;
+}

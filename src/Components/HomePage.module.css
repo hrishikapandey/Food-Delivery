@@ -1,0 +1,271 @@
+/* General Container */
+.container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Promo Bar */
+  .promoBar {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .promoCode {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .uk {
+    color: orange;
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navLinks li {
+    cursor: pointer;
+  }
+  
+  .navActions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cartButton {
+    background-color: green;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .loginButton {
+    background-color: orange;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 25px;
+    position: relative; 
+    width: 90%; /* Increase the width to allow more space */
+    max-width: 1800px; /* Increase max-width for larger screens */
+    margin: 0 auto; /* Center horizontally */
+  }
+  
+  
+  .heroText {
+    max-width: 50%;
+  }
+  
+  .orangeText {
+    color: orange;
+  }
+  
+  .searchBox {
+    margin-top: 20px;
+    display: flex;
+    position: relative; /* Allows absolute positioning of children */
+    width: 100%; /* Adjust as per your layout */
+    max-width: 400px; /* Limit the container width */
+  }
+  
+  
+  .searchInput {
+    width: 100%; /* Ensure input fills the container */
+    padding: 10px 60px 10px 20px; /* Add right padding for the button */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+  }
+  
+  .searchButton {
+    position: absolute; /* Position inside the container */
+    top: 50%; /* Align vertically */
+    right: 9px; /* Align to the right */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    background-color: orange;
+    color: white;
+    padding: 5px 15px; /* Adjust padding for a compact look */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 2.4rem;
+    width: 5rem;
+  }
+  
+  
+  .heroImage img {
+    max-width: 600px;
+    margin-top: 5rem;
+  }
+  
+  .heroSteps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    height: 5rem;
+  
+  }
+  
+  .step p {
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+  }
+  
+  /* Deals Section */
+  .dealsSection {
+    padding: 40px;
+    background-color: white;
+  }
+  
+  .dealsSection h2 {
+    text-align: center;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .filters button {
+    padding: 5px 15px;
+    border: 1px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .activeFilter {
+    background-color: orange;
+    color: white;
+    border: none;
+  }
+  
+  .dealsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .dealCard {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .discount {
+    color: orange;
+    font-weight: bold;
+  }
+
+  .heroSteps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .orangeContainer {
+    position: relative; /* Make this container a containing block */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .orangeImage {
+    width: 29rem;
+    height: 30rem;
+    object-fit: cover; /* Ensure the image covers the container */
+    position: relative; /* Ensures .step elements stay inside this image */
+   
+  }
+  
+  .girlImage {
+    position: absolute;
+   left: 0;
+    width: 18rem; /* Adjust size as needed */
+    height: 25rem;
+    margin-top: 5rem;
+  }
+  
+  .step {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .step p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .stepText {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .step:nth-child(3n+1) {
+    top: 10%;
+    left: 50%; /* Adjust to place Step 1 at the top */
+  }
+  
+  .step:nth-child(3n+2) {
+    top: 50%; /* Adjust to place Step 2 in the middle */
+    transform: translateY(-50%); /* Center vertically */
+    left: 40%;
+  }
+  
+  .step:nth-child(3n+3) {
+    bottom: 10%; /* Adjust to place Step 3 at the bottom */
+    left: 50%;
+  }
+  
