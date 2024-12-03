@@ -3,9 +3,15 @@ import styles from "./HomePage.module.css";
 import orange from "../assets/orange.png";
 import girlimg from "../assets/girlimg.png";
 import girlimg2 from "../assets/girlimg2.png";
+import Logo from "../assets/logo (3).png";
+import secondimg from "../assets/secondimg.png";
+import thirdimg from "../assets/thirdimg.png";
+
+
 
 
 const HomePage = () => {
+  const items = Array.from({ length: 6 }, (_, index) => `Item ${index + 1}`);
   return (
     <div className={styles.container}>
       {/* Top Promo Bar */}
@@ -16,9 +22,9 @@ const HomePage = () => {
 
       {/* Navbar */}
       <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          Order<span className={styles.uk}>UK</span>
-        </div>
+      <h1 className={styles.logo}>
+      <img src={Logo} alt="Company Logo" />
+    </h1>
         <ul className={styles.navLinks}>
           <li>Home</li>
           <li>Browse Menu</li>
@@ -88,30 +94,29 @@ const HomePage = () => {
         </div>
         <div className={styles.dealsGrid}>
           <div className={styles.dealCard}>
-            <img
-              src="https://via.placeholder.com/300x200"
-              alt="Chef Burgers London"
-            />
+          <img src={thirdimg}></img>
             <h3>Chef Burgers London</h3>
             <span className={styles.discount}>-40%</span>
           </div>
           <div className={styles.dealCard}>
-            <img
-              src="https://via.placeholder.com/300x200"
-              alt="Grand AI Cafe London"
-            />
+          <img src={secondimg}></img>
             <h3>Grand AI Cafe London</h3>
             <span className={styles.discount}>-20%</span>
           </div>
           <div className={styles.dealCard}>
-            <img
-              src="https://via.placeholder.com/300x200"
-              alt="Butterbrot Cafe London"
-            />
+            <img src={thirdimg}></img>
             <h3>Butterbrot Cafe London</h3>
             <span className={styles.discount}>-17%</span>
           </div>
         </div>
+        <div className={styles.dealsGrid}>
+        {items.map((item, index) => (
+          <div key={index} className={styles.gridItem}>
+            {item}
+          </div>
+        ))}
+      </div>
+       
       </section>
     </div>
   );

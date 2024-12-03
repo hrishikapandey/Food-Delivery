@@ -199,6 +199,24 @@
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
+  .dealsGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns, each taking equal width */
+    gap: 16px; /* Spacing between the grid items */
+    padding: 16px; /* Optional: Add padding around the grid */
+  }
+  
+  .gridItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc; /* Optional: Border for grid items */
+    border-radius: 8px; /* Optional: Rounded corners */
+    padding: 16px; /* Space inside each grid item */
+    background-color: #f9f9f9; /* Optional: Background color */
+  }
+  
   
   .discount {
     color: orange;
